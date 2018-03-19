@@ -40,3 +40,9 @@
 > eth.accounts  
 > personal.newAccount("パスワード")  
 > eth.accounts  
+
+1. 採掘（マイニング）してみる
+> eth.coinbase  
+> miner.start()  
+> eth.blockNumber  
+> miner.stop()
