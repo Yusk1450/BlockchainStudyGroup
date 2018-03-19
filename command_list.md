@@ -8,19 +8,19 @@
 ## セットアップ
 1. デスクトップに「eth」フォルダを作成する
 1. 「eth」フォルダに「genesis.json」を作成し、下記をコピペする。
-> {
->   "config": {
->     "chainId": 15
->   },
->   "nonce": "0x0000000000000042",
->   "timestamp": "0x0",
->   "parentHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
->   "extraData": "",
->   "gasLimit": "0x8000000",
->   "difficulty": "0x4000",
->   "mixhash": "0x0000000000000000000000000000000000000000000000000000000000000000",
->   "coinbase": "0x3333333333333333333333333333333333333333",
->   "alloc": {}
+> {  
+>   "config": {  
+>     "chainId": 15  
+>   },  
+>   "nonce": "0x0000000000000042",  
+>   "timestamp": "0x0",  
+>   "parentHash": "0x0000000000000000000000000000000000000000000000000000000000000000",  
+>   "extraData": "",  
+>   "gasLimit": "0x8000000",  
+>   "difficulty": "0x4000",  
+>   "mixhash": "0x0000000000000000000000000000000000000000000000000000000000000000",  
+>   "coinbase": "0x3333333333333333333333333333333333333333",  
+>   "alloc": {}  
 > }
 
 1. Genesisブロックを作成する
@@ -35,8 +35,8 @@
 > eth.getBlock(0)
 
 1. アカウントを2つ作成する
-> eth.accounts
-> personal.newAccount("パスワード")
-> eth.accounts
-> personal.newAccount("パスワード")
-> eth.accounts
+> eth.accounts  
+> personal.newAccount("パスワード")  
+> eth.accounts  
+> personal.newAccount("パスワード")  
+> eth.accounts  
