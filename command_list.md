@@ -6,8 +6,8 @@
 > brew install ethereum
 
 ## セットアップ
-1. デスクトップに「eth」フォルダを作成する
-2. 「eth」フォルダに「genesis.json」を作成し、下記をコピペする。
+１．デスクトップに「eth」フォルダを作成する
+２．「eth」フォルダに「genesis.json」を作成し、下記をコピペする。
 > {  
 >   "config": {  
 >     "chainId": 15  
@@ -23,26 +23,27 @@
 >   "alloc": {}  
 > }
 
-1. Genesisブロックを作成する
+３．Genesisブロックを作成する
 > geth --datadir /Users/ユーザ名/Desktop/eth init /Users/ユーザ名/Desktop/eth/genesis.json
 
-1. Gethを起動する
+４．Gethを起動する
 > geth --networkid "15" --nodiscover --datadir "/Users/ユーザ名/Desktop/eth" console 2>> /Users/ユーザ名/Desktop/eth/geth_err.log
 
 ## Ethereumを体験してみる
 
-1. Genesisブロックを確認する
+１．Genesisブロックを確認する
 > eth.getBlock(0)
 
-1. アカウントを2つ作成する
+２．アカウントを2つ作成する
 > eth.accounts  
 > personal.newAccount("パスワード")  
 > eth.accounts  
 > personal.newAccount("パスワード")  
 > eth.accounts  
 
-1. 採掘（マイニング）してみる
+３．採掘（マイニング）してみる
 > eth.coinbase  
 > miner.start()  
 > eth.blockNumber  
-> miner.stop()
+> miner.stop()  
+> eth.getBalance(eth.accounts[0])
