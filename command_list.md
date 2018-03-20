@@ -24,37 +24,37 @@
 > }
 
 ３．Genesisブロックを作成する
-> geth --datadir /Users/ユーザ名/Desktop/eth init /Users/ユーザ名/Desktop/eth/genesis.json
+`geth --datadir /Users/ユーザ名/Desktop/eth init /Users/ユーザ名/Desktop/eth/genesis.json`
 
 ４．Gethを起動する
-> geth --networkid "15" --nodiscover --datadir "/Users/ユーザ名/Desktop/eth" console 2>> /Users/ユーザ名/Desktop/eth/geth_err.log
+`geth --networkid "15" --nodiscover --datadir "/Users/ユーザ名/Desktop/eth" console 2>> /Users/ユーザ名/Desktop/eth/geth_err.log`
 
 ## Ethereumを体験してみる
 
 １．Genesisブロックを確認する
-> eth.getBlock(0)
+`eth.getBlock(0)`
 
 ２．アカウントを2つ作成する
-> eth.accounts  
-> personal.newAccount("パスワード")  
-> eth.accounts  
-> personal.newAccount("パスワード")  
-> eth.accounts  
+`eth.accounts`  
+`personal.newAccount("パスワード")`  
+`eth.accounts`  
+`personal.newAccount("パスワード")`  
+`eth.accounts`
 
 ３．採掘（マイニング）してみる
-> eth.coinbase  
-> miner.start()  
-> eth.blockNumber  
-> miner.stop()  
-> eth.getBalance(eth.accounts[0])
+`eth.coinbase`  
+`miner.start()`  
+`eth.blockNumber`  
+`miner.stop()`  
+`eth.getBalance(eth.accounts[0])`
 
 ４．送金してみる
-> eth.getBalance(eth.accounts[0])  
-> eth.getBalance(eth.accounts[1])  
-> personal.unlockAccount(eth.accounts[0])  
-> eth.sendTransaction({from: eth.accounts[0], to: eth.accounts[1], value: web3.toWei(5, "ether")})  
-> eth.getBalance(eth.accounts[1])  
-> personal.unlockAccount(eth.accounts[1])  
-> eth.sendTransaction({from: eth.accounts[1], to: eth.accounts[0], value: web3.toWei(3, "ether")})  
-> eth.getBalance(eth.accounts[1])  
-> eth.getTransaction(トランザクションID)
+`eth.getBalance(eth.accounts[0])`  
+`eth.getBalance(eth.accounts[1])`  
+`personal.unlockAccount(eth.accounts[0])`  
+`eth.sendTransaction({from: eth.accounts[0], to: eth.accounts[1], value: web3.toWei(5, "ether")})`  
+`eth.getBalance(eth.accounts[1])`  
+`personal.unlockAccount(eth.accounts[1])`  
+`eth.sendTransaction({from: eth.accounts[1], to: eth.accounts[0], value: web3.toWei(3, "ether")})`  
+`eth.getBalance(eth.accounts[1])`  
+`eth.getTransaction(トランザクションID)`
