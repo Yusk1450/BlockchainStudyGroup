@@ -7,7 +7,7 @@
 
 ## セットアップ
 １．デスクトップに「eth」フォルダを作成する
-２．「eth」フォルダに「genesis.json」を作成し、下記をコピペする。
+２．「eth」フォルダに「genesis.json」を作成し、下記をコピペする。  
 > {  
 >   "config": {  
 >     "chainId": 15  
@@ -23,32 +23,32 @@
 >   "alloc": {}  
 > }
 
-３．Genesisブロックを作成する
+３．Genesisブロックを作成する  
 `geth --datadir /Users/ユーザ名/Desktop/eth init /Users/ユーザ名/Desktop/eth/genesis.json`
 
-４．Gethを起動する
+４．Gethを起動する  
 `geth --networkid "15" --nodiscover --datadir "/Users/ユーザ名/Desktop/eth" console 2>> /Users/ユーザ名/Desktop/eth/geth_err.log`
 
 ## Ethereumを体験してみる
 
-１．Genesisブロックを確認する
+１．Genesisブロックを確認する  
 `eth.getBlock(0)`
 
-２．アカウントを2つ作成する
+２．アカウントを2つ作成する  
 `eth.accounts`  
 `personal.newAccount("パスワード")`  
 `eth.accounts`  
 `personal.newAccount("パスワード")`  
 `eth.accounts`
 
-３．採掘（マイニング）してみる
+３．採掘（マイニング）してみる  
 `eth.coinbase`  
 `miner.start()`  
 `eth.blockNumber`  
 `miner.stop()`  
 `eth.getBalance(eth.accounts[0])`
 
-４．送金してみる
+４．送金してみる  
 `eth.getBalance(eth.accounts[0])`  
 `eth.getBalance(eth.accounts[1])`  
 `personal.unlockAccount(eth.accounts[0])`  
