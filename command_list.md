@@ -2,8 +2,8 @@
 # コマンドリスト
 
 ## Ethereumをインストールする（macOS）
-> brew tap ethereum/ethereum  
-> brew install ethereum
+`brew tap ethereum/ethereum`  
+`brew install ethereum`
 
 ## セットアップ
 １．デスクトップに「eth」フォルダを作成する
