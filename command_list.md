@@ -6,7 +6,7 @@
 `brew install ethereum`
 
 ## セットアップ
-１．デスクトップに「eth」フォルダを作成する
+１．デスクトップに「eth」フォルダを作成する  
 ２．「eth」フォルダに「genesis.json」を作成し、下記をコピペする。  
 > {  
 >   "config": {  
