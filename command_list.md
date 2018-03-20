@@ -47,3 +47,14 @@
 > eth.blockNumber  
 > miner.stop()  
 > eth.getBalance(eth.accounts[0])
+
+４．送金してみる
+> eth.getBalance(eth.accounts[0])  
+> eth.getBalance(eth.accounts[1])  
+> personal.unlockAccount(eth.accounts[0])  
+> eth.sendTransaction({from: eth.accounts[0], to: eth.accounts[1], value: web3.toWei(5, "ether")})  
+> eth.getBalance(eth.accounts[1])  
+> personal.unlockAccount(eth.accounts[1])  
+> eth.sendTransaction({from: eth.accounts[1], to: eth.accounts[0], value: web3.toWei(3, "ether")})  
+> eth.getBalance(eth.accounts[1])  
+> eth.getTransaction(トランザクションID)
