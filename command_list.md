@@ -2,7 +2,7 @@
 # コマンドリスト
 
 ## Ethereumをインストールする（macOS）
-１．Homebrew（https://brew.sh/index_ja）をインストールする。  
+１．[Homebrew](https://brew.sh/index_ja)をインストールする。  
 ２．下記のコマンドをターミナルに入力する。  
 `brew tap ethereum/ethereum`  
 `brew install ethereum`
