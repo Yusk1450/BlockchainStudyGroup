@@ -2,11 +2,13 @@
 # コマンドリスト
 
 ## Ethereumをインストールする（macOS）
+１．Homebrew（https://brew.sh/index_ja）をインストールする。  
+２．下記のコマンドをターミナルに入力する。  
 `brew tap ethereum/ethereum`  
 `brew install ethereum`
 
 ## セットアップ
-１．デスクトップに「eth」フォルダを作成する  
+１．デスクトップに「eth」フォルダを作成する。  
 ２．「eth」フォルダに「genesis.json」を作成し、下記をコピペする。  
 > {  
 >   "config": {  
