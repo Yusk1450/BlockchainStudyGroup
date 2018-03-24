@@ -26,10 +26,10 @@
 > }
 
 ３．Genesisブロックを作成する  
-`geth --datadir /Users/ユーザ名/Desktop/eth init /Users/ユーザ名/Desktop/eth/genesis.json`
+`geth --datadir ~/Desktop/eth init ~/Desktop/eth/genesis.json`
 
 ４．Gethを起動する  
-`geth --networkid "15" --nodiscover --datadir "/Users/ユーザ名/Desktop/eth" console 2>> /Users/ユーザ名/Desktop/eth/geth_err.log`
+`geth --networkid "15" --nodiscover --datadir "~/Desktop/eth" console 2>> ~/Desktop/eth/geth_err.log`
 
 ## Ethereumを体験してみる
 
